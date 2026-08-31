@@ -1,0 +1,32 @@
+[
+  {
+    "document_id": "Sample",
+    "title": "Sample",
+    "source": "test",
+    "source_url": null,
+    "language": "en",
+    "chunk_id": 0,
+    "text": "eGovAssist Knowledge Base Test\n\nPMFBY\n\nThe Pradhan Mantri Fasal Bima Yojana provides crop insurance\ncoverage to eligible farmers according to the applicable scheme\nguidelines.\n\nPMFBY provides financial protection to farmers against eligible\ncrop losses caused by covered risks under the applicable scheme.\n\nGrievance Redressal\n\nFarmers may use the applicable grievance redressal mechanisms\nspecified in the official scheme guidelines.",
+    "file_path": "data\\raw\\test\\Sample.txt"
+  },
+  {
+    "document_id": "Sample",
+    "title": "Sample",
+    "source": "test",
+    "source_url": null,
+    "language": "en",
+    "chunk_id": 1,
+    "text": "A grievance should be submitted through the appropriate\ndesignated grievance redressal authority or mechanism.\n\nEligibility\n\nFarmers must satisfy the applicable eligibility requirements\nspecified under the PMFBY scheme and relevant government\nguidelines.\n\nApplication\n\nEligible farmers can apply for crop insurance through the\napplicable enrollment channels and within the prescribed\nenrollment period.\n\nPremium",
+    "file_path": "data\\raw\\test\\Sample.txt"
+  },
+  {
+    "document_id": "Sample",
+    "title": "Sample",
+    "source": "test",
+    "source_url": null,
+    "language": "en",
+    "chunk_id": 2,
+    "text": "The insurance premium payable by farmers is determined\naccording to the applicable PMFBY provisions and notified\nrates.\n\nImportant Notice\n\nThis document is only a test knowledge base for the eGovAssist\nprototype. It is not an official government document and must\nnot be used as authoritative legal or administrative guidance.",
+    "file_path": "data\\raw\\test\\Sample.txt"
+  }
+]

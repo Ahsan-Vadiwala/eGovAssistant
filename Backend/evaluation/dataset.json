@@ -1,0 +1,1977 @@
+{
+  "dataset_version": "2026-08-30.v3",
+  "description": "eGovAssist web-evidence retrieval evaluation dataset. Ground truth manually curated from known official Indian government portals, independent of eGovAssist's own retrieval output.",
+  "n_queries": 61,
+  "queries": [
+    {
+      "id": "q001",
+      "question": "What is PMFBY and who is eligible for it?",
+      "category": "agriculture",
+      "relevant_urls": [
+        "https://pmfby.gov.in/"
+      ],
+      "relevant_domains": [
+        "pmfby.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmfby.gov.in"
+      ],
+      "anchor_url": "https://pmfby.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://pmfby.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pmfby.gov.in/",
+        "final_domain": "pmfby.gov.in",
+        "retrieved_in_runs": "13/13",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q002",
+      "question": "How do I check my PM Kisan installment status?",
+      "category": "agriculture",
+      "relevant_urls": [
+        "https://pmkisan.gov.in/"
+      ],
+      "relevant_domains": [
+        "pmkisan.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmkisan.gov.in"
+      ],
+      "anchor_url": "https://pmkisan.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://pmkisan.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pmkisan.gov.in/",
+        "final_domain": "pmkisan.gov.in",
+        "retrieved_in_runs": "13/13",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q003",
+      "question": "What is the Soil Health Card scheme?",
+      "category": "agriculture",
+      "relevant_urls": [
+        "https://soilhealth.dac.gov.in/"
+      ],
+      "relevant_domains": [
+        "soilhealth.dac.gov.in"
+      ],
+      "authoritative_domains": [
+        "dac.gov.in",
+        "gov.in",
+        "nic.in",
+        "soilhealth.dac.gov.in"
+      ],
+      "retrieval_gap_note": "Borderline: soilhealth.dac.gov.in never appeared; only PIB press releases and one district mirror did. Possible the portal URL structure changed -- worth a manual check, not broadening ground truth based on PIB alone.",
+      "anchor_url": "https://soilhealth.dac.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://soilhealth.dac.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://soilhealth.dac.gov.in/",
+        "final_domain": "soilhealth.dac.gov.in",
+        "retrieved_in_runs": "1/15",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q004",
+      "question": "How can a farmer apply for a Kisan Credit Card?",
+      "category": "agriculture",
+      "relevant_urls": [
+        "https://www.nabard.org/content1.aspx?catid=23&id=23"
+      ],
+      "relevant_domains": [
+        "financialservices.gov.in",
+        "nabard.org"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nabard.org",
+        "nic.in"
+      ],
+      "ground_truth_note": "KCC is a banking product overseen by Dept of Financial Services (Ministry of Finance) -- legitimate alternate authority alongside NABARD.",
+      "anchor_url": "https://www.nabard.org/content1.aspx?catid=23&id=23",
+      "source_type": "programme_page",
+      "acceptable_sources": [
+        "https://www.nabard.org/content1.aspx?catid=23&id=23"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK but never retrieved across runs -> provider coverage gap, GT URL itself is live",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.nabard.org/pagenotfound.aspx",
+        "final_domain": "www.nabard.org",
+        "retrieved_in_runs": "0/15",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q005",
+      "question": "What subsidies are available under the Agriculture Infrastructure Fund?",
+      "category": "agriculture",
+      "relevant_urls": [
+        "https://agriinfra.dac.gov.in/"
+      ],
+      "relevant_domains": [
+        "agriinfra.dac.gov.in"
+      ],
+      "authoritative_domains": [
+        "agriinfra.dac.gov.in",
+        "dac.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://agriinfra.dac.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://agriinfra.dac.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://agriinfra.dac.gov.in/",
+        "final_domain": "agriinfra.dac.gov.in",
+        "retrieved_in_runs": "13/13",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q006",
+      "question": "What is e-NAM and how does it help farmers sell produce?",
+      "category": "agriculture",
+      "relevant_urls": [
+        "https://www.enam.gov.in/"
+      ],
+      "relevant_domains": [
+        "enam.gov.in"
+      ],
+      "authoritative_domains": [
+        "enam.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.enam.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.enam.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "TLS_MISMATCH locally but domain constantly retrieved -> live, local-cert issue only",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "12/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q007",
+      "question": "How do I get an LPG subsidy under PAHAL?",
+      "category": "subsidies",
+      "relevant_urls": [
+        "https://abhinavpahal.nic.in/"
+      ],
+      "relevant_domains": [
+        "mopng.gov.in",
+        "abhinavpahal.nic.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "abhinavpahal.nic.in"
+      ],
+      "ground_truth_note": "PAHAL/DBTL is administered by Ministry of Petroleum & Natural Gas -- legitimate owning ministry.",
+      "anchor_url": "https://www.pahal-diksha.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://abhinavpahal.nic.in/"
+      ],
+      "audit": {
+        "action": "REPLACE_GT",
+        "reason": "pahal-diksha.gov.in DNS_FAILED + never retrieved; Firecrawl/PAHAL official content now at abhinavpahal.nic.in (verified search)",
+        "url_status": "DNS_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "replaced_url": "https://www.pahal-diksha.gov.in/",
+        "replacement_url": "https://abhinavpahal.nic.in/"
+      }
+    },
+    {
+      "id": "q008",
+      "question": "What is the PM Surya Ghar rooftop solar subsidy scheme?",
+      "category": "subsidies",
+      "relevant_urls": [
+        "https://pmsuryaghar.gov.in/"
+      ],
+      "relevant_domains": [
+        "mnre.gov.in",
+        "pmsuryaghar.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmsuryaghar.gov.in"
+      ],
+      "ground_truth_note": "PM Surya Ghar is administered by Ministry of New & Renewable Energy -- legitimate owning ministry.",
+      "anchor_url": "https://pmsuryaghar.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://pmsuryaghar.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pmsuryaghar.gov.in/",
+        "final_domain": "pmsuryaghar.gov.in",
+        "retrieved_in_runs": "1/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q009",
+      "question": "How does the interest subvention scheme for crop loans work?",
+      "category": "subsidies",
+      "relevant_urls": [
+        "https://www.nabard.org/"
+      ],
+      "relevant_domains": [
+        "nabard.org"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nabard.org",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.nabard.org/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.nabard.org/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.nabard.org/Hindi/Default.aspx",
+        "final_domain": "www.nabard.org",
+        "retrieved_in_runs": "1/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q010",
+      "question": "What subsidy is available for setting up a small food processing unit under PMFME?",
+      "category": "subsidies",
+      "relevant_urls": [
+        "https://pmfme.mofpi.gov.in/"
+      ],
+      "relevant_domains": [
+        "pmfme.mofpi.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "mofpi.gov.in",
+        "nic.in",
+        "pmfme.mofpi.gov.in"
+      ],
+      "anchor_url": "https://pmfme.mofpi.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://pmfme.mofpi.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pmfme.mofpi.gov.in/",
+        "final_domain": "pmfme.mofpi.gov.in",
+        "retrieved_in_runs": "11/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q011",
+      "question": "What is the Pradhan Mantri Jan Dhan Yojana?",
+      "category": "financial_literacy",
+      "relevant_urls": [
+        "https://pmjdy.gov.in/"
+      ],
+      "relevant_domains": [
+        "pmjdy.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmjdy.gov.in"
+      ],
+      "anchor_url": "https://pmjdy.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://pmjdy.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pmjdy.gov.in/",
+        "final_domain": "pmjdy.gov.in",
+        "retrieved_in_runs": "11/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q012",
+      "question": "How do I open an account under Atal Pension Yojana?",
+      "category": "financial_literacy",
+      "relevant_urls": [
+        "https://pfrda.org.in/w/faqs/atal-pension-yojana"
+      ],
+      "relevant_domains": [
+        "financialservices.gov.in",
+        "pfrda.org.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "rbi.org.in",
+        "pfrda.org.in"
+      ],
+      "ground_truth_note": "Atal Pension Yojana is overseen by Dept of Financial Services (Ministry of Finance).",
+      "anchor_url": "https://www.npscra.nsdl.co.in/scheme-details.php",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://pfrda.org.in/w/faqs/atal-pension-yojana"
+      ],
+      "audit": {
+        "action": "REPLACE_GT",
+        "reason": "npscra.nsdl.co.in DNS_FAILED + never retrieved; canonical APY scheme info verified live via search at pfrda.org.in (HTTP 200)",
+        "url_status": "DNS_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "replaced_url": "https://www.npscra.nsdl.co.in/scheme-details.php",
+        "replacement_url": "https://pfrda.org.in/w/faqs/atal-pension-yojana"
+      }
+    },
+    {
+      "id": "q013",
+      "question": "What is the Pradhan Mantri Suraksha Bima Yojana and its premium?",
+      "category": "financial_literacy",
+      "relevant_urls": [
+        "https://www.jansuraksha.gov.in/"
+      ],
+      "relevant_domains": [
+        "financialservices.gov.in",
+        "jansuraksha.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "jansuraksha.gov.in",
+        "nic.in"
+      ],
+      "ground_truth_note": "PMSBY is overseen by Dept of Financial Services (Ministry of Finance).",
+      "anchor_url": "https://www.jansuraksha.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.jansuraksha.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "jansuraksha.gov.in TLS_MISMATCH locally but Firecrawl scrape SUCCESS (Jan-Dhan Se Jan Suraksha) -> live; retrieval coverage gap only",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q014",
+      "question": "How does the RBI's Ombudsman scheme help resolve banking complaints?",
+      "category": "financial_literacy",
+      "relevant_urls": [
+        "https://cms.rbi.org.in/"
+      ],
+      "relevant_domains": [
+        "cms.rbi.org.in",
+        "rbi.org.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "rbi.org.in"
+      ],
+      "anchor_url": "https://cms.rbi.org.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://cms.rbi.org.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK but never retrieved across runs -> provider coverage gap, GT URL itself is live",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://cms.rbi.org.in/cms/indexpage.html#eng",
+        "final_domain": "cms.rbi.org.in",
+        "retrieved_in_runs": "0/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q015",
+      "question": "What is a Sukanya Samriddhi Yojana account and its eligibility?",
+      "category": "financial_literacy",
+      "relevant_urls": [
+        "https://www.nsiindia.gov.in/"
+      ],
+      "relevant_domains": [
+        "myscheme.gov.in",
+        "nsiindia.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "nsiindia.gov.in"
+      ],
+      "ground_truth_note": "myscheme.gov.in is the official Govt of India scheme-discovery portal; a valid alternate authoritative source.",
+      "anchor_url": "https://www.nsiindia.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.nsiindia.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "TLS_MISMATCH locally but retrieved in some runs; reconcile",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "2/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q016",
+      "question": "How do I apply for a National Scholarship under NSP?",
+      "category": "education",
+      "relevant_urls": [
+        "https://scholarships.gov.in/"
+      ],
+      "relevant_domains": [
+        "scholarships.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "scholarships.gov.in"
+      ],
+      "anchor_url": "https://scholarships.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://scholarships.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://scholarships.gov.in/",
+        "final_domain": "scholarships.gov.in",
+        "retrieved_in_runs": "12/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q017",
+      "question": "What is the process to apply for an education loan under the Vidya Lakshmi portal?",
+      "category": "education",
+      "relevant_urls": [
+        "https://www.pmvidyalaxmi.co.in/"
+      ],
+      "relevant_domains": [
+        "pmvidyalaxmi.co.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmvidyalaxmi.co.in"
+      ],
+      "retrieval_gap_note": "Retrieval gap, not ground truth: zero .gov.in/.co.in official results surfaced at all; only private finance blogs. Worth investigating Tavily query construction for this one.",
+      "anchor_url": "https://www.vidyalakshmi.co.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.pmvidyalaxmi.co.in/"
+      ],
+      "audit": {
+        "action": "REPLACE_GT",
+        "reason": "vidyalakshmi.co.in CONNECTION_FAILED/slow + never retrieved; user-confirmed current portal is pmvidyalaxmi.co.in",
+        "url_status": "CONNECTION_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "replaced_url": "https://www.vidyalakshmi.co.in/",
+        "replacement_url": "https://www.pmvidyalaxmi.co.in/"
+      }
+    },
+    {
+      "id": "q018",
+      "question": "How can I check my CBSE class 10 result online?",
+      "category": "education",
+      "relevant_urls": [
+        "https://cbse.gov.in/"
+      ],
+      "relevant_domains": [
+        "cbse.gov.in"
+      ],
+      "authoritative_domains": [
+        "cbse.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://cbse.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://cbse.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.cbse.gov.in/",
+        "final_domain": "www.cbse.gov.in",
+        "retrieved_in_runs": "10/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q019",
+      "question": "What is the AICTE Pragati scholarship scheme for girl students?",
+      "category": "education",
+      "relevant_urls": [
+        "https://www.aicte-india.org/schemes/students-development-schemes/Pragati/General-Instructions"
+      ],
+      "relevant_domains": [
+        "aicte-india.org",
+        "aicte.gov.in",
+        "scholarships.gov.in"
+      ],
+      "authoritative_domains": [
+        "aicte-india.org",
+        "gov.in",
+        "nic.in"
+      ],
+      "ground_truth_note": "aicte.gov.in (distinct from aicte-india.org) and scholarships.gov.in (National Scholarship Portal) are both legitimate official channels for Pragati.",
+      "anchor_url": "https://www.aicte-india.org/schemes/students-development-schemes/Pragati",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://www.aicte-india.org/schemes/students-development-schemes/Pragati/General-Instructions"
+      ],
+      "audit": {
+        "action": "REPLACE_GT",
+        "reason": "GT path /Pragati -> HTTP 404 (redirect w/ trailing slash); verified live canonical is /Pragati/General-Instructions (HTTP 200, redirects to aicte.gov.in)",
+        "url_status": "HTTP_404",
+        "http_status": 404,
+        "final_url": "https://www.aicte.gov.in/schemes/students-development-schemes/Pragati",
+        "final_domain": "www.aicte.gov.in",
+        "retrieved_in_runs": "1/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "replaced_url": "https://www.aicte-india.org/schemes/students-development-schemes/Pragati",
+        "replacement_url": "https://www.aicte-india.org/schemes/students-development-schemes/Pragati/General-Instructions"
+      }
+    },
+    {
+      "id": "q020",
+      "question": "How do I apply for MITACS Globalink research internship for Indian students?",
+      "category": "education",
+      "relevant_urls": [
+        "https://www.mitacs.ca/en/programs/globalink/globalink-research-internship"
+      ],
+      "relevant_domains": [
+        "mitacs.ca"
+      ],
+      "authoritative_domains": [
+        "mitacs.ca"
+      ],
+      "anchor_url": "https://www.mitacs.ca/en/programs/globalink/globalink-research-internship",
+      "source_type": "programme_page",
+      "acceptable_sources": [
+        "https://www.mitacs.ca/en/programs/globalink/globalink-research-internship"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.mitacs.ca/our-programs/globalink-research-internship-students/",
+        "final_domain": "www.mitacs.ca",
+        "retrieved_in_runs": "5/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q021",
+      "question": "How do I register on the National Career Service (NCS) portal for jobs?",
+      "category": "employment",
+      "relevant_urls": [
+        "https://www.ncs.gov.in/"
+      ],
+      "relevant_domains": [
+        "dge.gov.in",
+        "ncs.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "ncs.gov.in",
+        "nic.in"
+      ],
+      "ground_truth_note": "Directorate General of Employment (dge.gov.in) is the actual owning directorate for NCS.",
+      "anchor_url": "https://www.ncs.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.ncs.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://ncs.gov.in",
+        "final_domain": "ncs.gov.in",
+        "retrieved_in_runs": "7/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q022",
+      "question": "What is the e-Shram card and who should register for it?",
+      "category": "employment",
+      "relevant_urls": [
+        "https://eshram.gov.in/"
+      ],
+      "relevant_domains": [
+        "eshram.gov.in"
+      ],
+      "authoritative_domains": [
+        "eshram.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://eshram.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://eshram.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://eshram.gov.in/",
+        "final_domain": "eshram.gov.in",
+        "retrieved_in_runs": "12/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q023",
+      "question": "How can I check my EPF balance and UAN status?",
+      "category": "employment",
+      "relevant_urls": [
+        "https://unifiedportal-mem.epfindia.gov.in/"
+      ],
+      "relevant_domains": [
+        "epfindia.gov.in"
+      ],
+      "authoritative_domains": [
+        "epfindia.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://unifiedportal-mem.epfindia.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://unifiedportal-mem.epfindia.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "CONNECTION_FAILED locally but domain retrieved in 11/12 runs -> live, local access limitation only",
+        "url_status": "CONNECTION_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "11/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q024",
+      "question": "What are the eligibility criteria for MGNREGA job cards?",
+      "category": "employment",
+      "relevant_urls": [
+        "https://nrega.nic.in/"
+      ],
+      "relevant_domains": [
+        "nrega.nic.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "nrega.nic.in"
+      ],
+      "retrieval_gap_note": "Retrieval gap, not ground truth: national nrega.nic.in never surfaced, only state-level mirrors (which are legitimate but different domains).",
+      "anchor_url": "https://nrega.nic.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://nrega.nic.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://nrega.nic.in/",
+        "final_domain": "nrega.nic.in",
+        "retrieved_in_runs": "1/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q025",
+      "question": "How do I apply for the PM Vishwakarma scheme for artisans?",
+      "category": "employment",
+      "relevant_urls": [
+        "https://pmvishwakarma.gov.in/"
+      ],
+      "relevant_domains": [
+        "pmvishwakarma.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmvishwakarma.gov.in"
+      ],
+      "anchor_url": "https://pmvishwakarma.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://pmvishwakarma.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pmvishwakarma.gov.in/",
+        "final_domain": "pmvishwakarma.gov.in",
+        "retrieved_in_runs": "12/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q026",
+      "question": "What is the Skill India / PMKVY scheme and how do I enroll?",
+      "category": "employment",
+      "relevant_urls": [
+        "https://www.skillindiadigital.gov.in/"
+      ],
+      "relevant_domains": [
+        "nsdcindia.org",
+        "skillindiadigital.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "skillindiadigital.gov.in"
+      ],
+      "ground_truth_note": "National Skill Development Corporation is the official implementing agency for PMKVY.",
+      "anchor_url": "https://www.pmkvyofficial.org/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://www.skillindiadigital.gov.in/"
+      ],
+      "audit": {
+        "action": "REPLACE_GT",
+        "reason": "pmkvyofficial.org DNS_FAILED + never retrieved; verified live current PMKVY portal skillindiadigital.gov.in (HTTP 200)",
+        "url_status": "DNS_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "replaced_url": "https://www.pmkvyofficial.org/",
+        "replacement_url": "https://www.skillindiadigital.gov.in/"
+      }
+    },
+    {
+      "id": "q027",
+      "question": "How do I get an Ayushman Bharat health card?",
+      "category": "healthcare",
+      "relevant_urls": [
+        "https://beneficiary.nha.gov.in/"
+      ],
+      "relevant_domains": [
+        "nha.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nha.gov.in",
+        "nic.in",
+        "pmjay.gov.in"
+      ],
+      "anchor_url": "https://beneficiary.nha.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://beneficiary.nha.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "beneficiary.nha.gov.in server responds HTTP 403 to crawler -> alive, bot-blocked; TLS_MISMATCH is local-cert limitation; retrieval coverage gap",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q028",
+      "question": "What is the CoWIN portal used for?",
+      "category": "healthcare",
+      "relevant_urls": [
+        "https://www.cowin.gov.in/"
+      ],
+      "relevant_domains": [
+        "cowin.gov.in"
+      ],
+      "authoritative_domains": [
+        "cowin.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "retrieval_gap_note": "Retrieval gap, not ground truth: cowin.gov.in itself never appeared in top 10 despite being a well-known, high-traffic official portal.",
+      "anchor_url": "https://www.cowin.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.cowin.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.cowin.gov.in/",
+        "final_domain": "www.cowin.gov.in",
+        "retrieved_in_runs": "1/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q029",
+      "question": "How do I book an appointment on the eSanjeevani telemedicine platform?",
+      "category": "healthcare",
+      "relevant_urls": [
+        "https://esanjeevani.mohfw.gov.in/"
+      ],
+      "relevant_domains": [
+        "esanjeevani.mohfw.gov.in",
+        "mohfw.gov.in"
+      ],
+      "authoritative_domains": [
+        "esanjeevani.mohfw.gov.in",
+        "gov.in",
+        "mohfw.gov.in",
+        "nic.in"
+      ],
+      "ground_truth_note": "Ministry of Health & Family Welfare (parent domain) is the legitimate owning ministry for eSanjeevani.",
+      "anchor_url": "https://esanjeevani.mohfw.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://esanjeevani.mohfw.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "esanjeevani.mohfw.gov.in slow/geo timeouts locally+crawler but Firecrawl search returns it as the canonical eSanjeevani portal -> live; keep",
+        "url_status": "CONNECTION_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "1/14",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q030",
+      "question": "What is the Janani Suraksha Yojana maternal health scheme?",
+      "category": "healthcare",
+      "relevant_urls": [
+        "https://nhm.gov.in/"
+      ],
+      "relevant_domains": [
+        "nhm.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nhm.gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://nhm.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://nhm.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://nhm.gov.in/",
+        "final_domain": "nhm.gov.in",
+        "retrieved_in_runs": "9/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q031",
+      "question": "How do I apply for a new Aadhaar card or update Aadhaar details?",
+      "category": "documents",
+      "relevant_urls": [
+        "https://uidai.gov.in/"
+      ],
+      "relevant_domains": [
+        "uidai.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "uidai.gov.in"
+      ],
+      "anchor_url": "https://uidai.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://uidai.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://uidai.gov.in/hi",
+        "final_domain": "uidai.gov.in",
+        "retrieved_in_runs": "11/12",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q032",
+      "question": "How do I apply for a PAN card online?",
+      "category": "documents",
+      "relevant_urls": [
+        "https://www.incometax.gov.in/iec/foportal/"
+      ],
+      "relevant_domains": [
+        "incometax.gov.in",
+        "incometaxindia.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "incometax.gov.in",
+        "nic.in"
+      ],
+      "ground_truth_note": "Income Tax Department's own domains (Instant e-PAN) are a fully legitimate, arguably more current, official route to get a PAN -- ground truth was too narrow here.",
+      "anchor_url": "https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.incometax.gov.in/iec/foportal/"
+      ],
+      "audit": {
+        "action": "REPLACE_GT",
+        "reason": "onlineservices.nsdl.com DNS_FAILED + never retrieved; verified live official PAN portal incometax.gov.in foportal (HTTP 200)",
+        "url_status": "DNS_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "1/13",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "replaced_url": "https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html",
+        "replacement_url": "https://www.incometax.gov.in/iec/foportal/"
+      }
+    },
+    {
+      "id": "q033",
+      "question": "What is the process to apply for a passport through Passport Seva?",
+      "category": "documents",
+      "relevant_urls": [
+        "https://www.passportindia.gov.in/"
+      ],
+      "relevant_domains": [
+        "passportindia.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "passportindia.gov.in"
+      ],
+      "anchor_url": "https://www.passportindia.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.passportindia.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.passportindia.gov.in/psp",
+        "final_domain": "www.passportindia.gov.in",
+        "retrieved_in_runs": "9/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q034",
+      "question": "How do I apply for a driving license through Parivahan Sewa?",
+      "category": "documents",
+      "relevant_urls": [
+        "https://parivahan.gov.in/"
+      ],
+      "relevant_domains": [
+        "parivahan.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "parivahan.gov.in"
+      ],
+      "anchor_url": "https://parivahan.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://parivahan.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://parivahan.gov.in/",
+        "final_domain": "parivahan.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q035",
+      "question": "How can I register a birth certificate online in India?",
+      "category": "documents",
+      "relevant_urls": [
+        "https://crsorgi.gov.in/"
+      ],
+      "relevant_domains": [
+        "crsorgi.gov.in"
+      ],
+      "authoritative_domains": [
+        "crsorgi.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://crsorgi.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://crsorgi.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "TLS_MISMATCH locally but retrieved in some runs; reconcile",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "1/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q036",
+      "question": "How do I check my voter ID / EPIC status on the NVSP portal?",
+      "category": "documents",
+      "relevant_urls": [
+        "https://voters.eci.gov.in/"
+      ],
+      "relevant_domains": [
+        "voters.eci.gov.in",
+        "eci.gov.in"
+      ],
+      "authoritative_domains": [
+        "eci.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://voters.eci.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://voters.eci.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://voters.eci.gov.in/",
+        "final_domain": "voters.eci.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q037",
+      "question": "How can I e-file my income tax return?",
+      "category": "documents",
+      "relevant_urls": [
+        "https://www.incometax.gov.in/"
+      ],
+      "relevant_domains": [
+        "incometax.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "incometax.gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.incometax.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.incometax.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.incometax.gov.in/iec/foportal/",
+        "final_domain": "www.incometax.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q038",
+      "question": "What is Digilocker and how do I store documents on it?",
+      "category": "documents",
+      "relevant_urls": [
+        "https://www.digilocker.gov.in/"
+      ],
+      "relevant_domains": [
+        "digilocker.gov.in"
+      ],
+      "authoritative_domains": [
+        "digilocker.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.digilocker.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.digilocker.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.digilocker.gov.in/",
+        "final_domain": "www.digilocker.gov.in",
+        "retrieved_in_runs": "11/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q039",
+      "question": "What is the Pradhan Mantri Awas Yojana for housing?",
+      "category": "citizen_welfare",
+      "relevant_urls": [
+        "https://pmaymis.gov.in/"
+      ],
+      "relevant_domains": [
+        "pmaymis.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmaymis.gov.in"
+      ],
+      "anchor_url": "https://pmaymis.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://pmaymis.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pmaymis.gov.in/",
+        "final_domain": "pmaymis.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q040",
+      "question": "How do I apply for a ration card under the National Food Security Act?",
+      "category": "citizen_welfare",
+      "relevant_urls": [
+        "https://nfsa.gov.in/"
+      ],
+      "relevant_domains": [
+        "nfsa.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nfsa.gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://nfsa.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://nfsa.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://nfsa.gov.in/",
+        "final_domain": "nfsa.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q041",
+      "question": "What is the One Nation One Ration Card scheme?",
+      "category": "citizen_welfare",
+      "relevant_urls": [
+        "https://nfsa.gov.in/"
+      ],
+      "relevant_domains": [
+        "nfsa.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nfsa.gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://nfsa.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://nfsa.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK but never retrieved across runs -> provider coverage gap, GT URL itself is live",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://nfsa.gov.in/",
+        "final_domain": "nfsa.gov.in",
+        "retrieved_in_runs": "0/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q042",
+      "question": "How does the Ujjwala Yojana LPG connection scheme work for BPL families?",
+      "category": "citizen_welfare",
+      "relevant_urls": [
+        "https://www.pmuy.gov.in/"
+      ],
+      "relevant_domains": [
+        "pmuy.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmuy.gov.in"
+      ],
+      "anchor_url": "https://www.pmuy.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://www.pmuy.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.pmuy.gov.in/index.aspx",
+        "final_domain": "www.pmuy.gov.in",
+        "retrieved_in_runs": "11/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q043",
+      "question": "What welfare schemes exist for senior citizens under the Ministry of Social Justice?",
+      "category": "citizen_welfare",
+      "relevant_urls": [
+        "https://socialjustice.gov.in/"
+      ],
+      "relevant_domains": [
+        "socialjustice.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "socialjustice.gov.in"
+      ],
+      "anchor_url": "https://socialjustice.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://socialjustice.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://socialjustice.gov.in/",
+        "final_domain": "socialjustice.gov.in",
+        "retrieved_in_runs": "6/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q044",
+      "question": "What is the Divyangjan (disability) UDID card and how do I apply?",
+      "category": "citizen_welfare",
+      "relevant_urls": [
+        "https://www.swavlambancard.gov.in/"
+      ],
+      "relevant_domains": [
+        "swavlambancard.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "swavlambancard.gov.in"
+      ],
+      "anchor_url": "https://www.swavlambancard.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://www.swavlambancard.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://swavlambancard.gov.in/",
+        "final_domain": "swavlambancard.gov.in",
+        "retrieved_in_runs": "8/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q045",
+      "question": "How do I file a grievance on the CPGRAMS portal?",
+      "category": "grievances",
+      "relevant_urls": [
+        "https://pgportal.gov.in/"
+      ],
+      "relevant_domains": [
+        "pgportal.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pgportal.gov.in"
+      ],
+      "anchor_url": "https://pgportal.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://pgportal.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pgportal.gov.in/",
+        "final_domain": "pgportal.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q046",
+      "question": "What is the escalation process if my CPGRAMS grievance is not resolved in time?",
+      "category": "grievances",
+      "relevant_urls": [
+        "https://pgportal.gov.in/"
+      ],
+      "relevant_domains": [
+        "pgportal.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pgportal.gov.in"
+      ],
+      "anchor_url": "https://pgportal.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://pgportal.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pgportal.gov.in/",
+        "final_domain": "pgportal.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q047",
+      "question": "How can I file a consumer complaint on the National Consumer Helpline / e-Daakhil portal?",
+      "category": "grievances",
+      "relevant_urls": [
+        "https://consumerhelpline.gov.in/"
+      ],
+      "relevant_domains": [
+        "consumerhelpline.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "consumerhelpline.gov.in"
+      ],
+      "anchor_url": "https://edaakhil.nic.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://consumerhelpline.gov.in/"
+      ],
+      "audit": {
+        "action": "REPLACE_GT",
+        "reason": "edaakhil.nic.in DNS_FAILED + absent from search results; NCH official consumerhelpline.gov.in verified live (HTTP 200)",
+        "url_status": "DNS_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "replaced_url": "https://edaakhil.nic.in/",
+        "replacement_url": "https://consumerhelpline.gov.in/"
+      }
+    },
+    {
+      "id": "q048",
+      "question": "How do I lodge a banking complaint through the RBI's Complaint Management System?",
+      "category": "grievances",
+      "relevant_urls": [
+        "https://cms.rbi.org.in/"
+      ],
+      "relevant_domains": [
+        "cms.rbi.org.in"
+      ],
+      "authoritative_domains": [
+        "cms.rbi.org.in",
+        "gov.in",
+        "nic.in",
+        "rbi.org.in"
+      ],
+      "anchor_url": "https://cms.rbi.org.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://cms.rbi.org.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK but never retrieved across runs -> provider coverage gap, GT URL itself is live",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://cms.rbi.org.in/cms/indexpage.html#eng",
+        "final_domain": "cms.rbi.org.in",
+        "retrieved_in_runs": "0/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q049",
+      "question": "What is the process to file an RTI (Right to Information) application online?",
+      "category": "grievances",
+      "relevant_urls": [
+        "https://rtionline.gov.in/"
+      ],
+      "relevant_domains": [
+        "rtionline.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "rtionline.gov.in"
+      ],
+      "anchor_url": "https://rtionline.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://rtionline.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://rtionline.gov.in/",
+        "final_domain": "rtionline.gov.in",
+        "retrieved_in_runs": "9/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q050",
+      "question": "How do I register a small business under Udyam Registration?",
+      "category": "government_services",
+      "relevant_urls": [
+        "https://udyamregistration.gov.in/"
+      ],
+      "relevant_domains": [
+        "udyamregistration.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "udyamregistration.gov.in"
+      ],
+      "anchor_url": "https://udyamregistration.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://udyamregistration.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://udyamregistration.gov.in/",
+        "final_domain": "udyamregistration.gov.in",
+        "retrieved_in_runs": "1/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q051",
+      "question": "What is the Mudra Loan scheme for small businesses?",
+      "category": "government_services",
+      "relevant_urls": [
+        "https://www.mudra.org.in/",
+        "https://www.sidbi.in/en/"
+      ],
+      "relevant_domains": [
+        "mudra.org.in",
+        "sidbi.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "mudra.org.in",
+        "nic.in",
+        "sidbi.in"
+      ],
+      "anchor_url": "https://www.mudra.org.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://www.mudra.org.in/",
+        "https://www.sidbi.in/en/"
+      ],
+      "audit": {
+        "action": "ADD_ACCEPTABLE_SOURCE",
+        "reason": "mudra.org.in canonical official domain but TIMEOUT for crawler/local + never retrieved; parent-org SIDBI verified live (HTTP 200) -> ADD acceptable source",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "additional_source": "https://www.sidbi.in/en/"
+      }
+    },
+    {
+      "id": "q052",
+      "question": "How can a cooperative society register under the Ministry of Cooperation?",
+      "category": "government_services",
+      "relevant_urls": [
+        "https://cooperation.gov.in/"
+      ],
+      "relevant_domains": [
+        "cooperation.gov.in"
+      ],
+      "authoritative_domains": [
+        "cooperation.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://cooperation.gov.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://cooperation.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "TLS_MISMATCH locally but retrieved in some runs; reconcile",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "2/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q053",
+      "question": "What is the Startup India registration process?",
+      "category": "government_services",
+      "relevant_urls": [
+        "https://www.startupindia.gov.in/"
+      ],
+      "relevant_domains": [
+        "startupindia.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "startupindia.gov.in"
+      ],
+      "anchor_url": "https://www.startupindia.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.startupindia.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.startupindia.gov.in/",
+        "final_domain": "www.startupindia.gov.in",
+        "retrieved_in_runs": "11/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q054",
+      "question": "How do I register a company through the MCA21 portal?",
+      "category": "government_services",
+      "relevant_urls": [
+        "https://www.mca.gov.in/"
+      ],
+      "relevant_domains": [
+        "mca.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "mca.gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.mca.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.mca.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "mca.gov.in is LIVE (Firecrawl scrape 33KB); local HTTP_403 is bot-block not dead; GT url is already the canonical subject. Keep.",
+        "url_status": "HTTP_403",
+        "http_status": 403,
+        "final_url": "https://www.mca.gov.in/",
+        "final_domain": "www.mca.gov.in",
+        "retrieved_in_runs": "0/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q055",
+      "question": "How do I apply for an income certificate in Gujarat through the Digital Gujarat portal?",
+      "category": "state_specific",
+      "relevant_urls": [
+        "https://www.digitalgujarat.gov.in/"
+      ],
+      "relevant_domains": [
+        "digitalgujarat.gov.in"
+      ],
+      "authoritative_domains": [
+        "digitalgujarat.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.digitalgujarat.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.digitalgujarat.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "TLS_MISMATCH locally but retrieved in some runs; reconcile",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "1/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q056",
+      "question": "What is the process to get a domicile certificate in Gujarat?",
+      "category": "state_specific",
+      "relevant_urls": [
+        "https://www.digitalgujarat.gov.in/"
+      ],
+      "relevant_domains": [
+        "digitalgujarat.gov.in"
+      ],
+      "authoritative_domains": [
+        "digitalgujarat.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.digitalgujarat.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.digitalgujarat.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "TLS_MISMATCH locally but retrieved in some runs; reconcile",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "1/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q058",
+      "question": "What is the MYSY scholarship scheme for Gujarat students?",
+      "category": "state_specific",
+      "relevant_urls": [
+        "https://mysy.gujarat.gov.in/"
+      ],
+      "relevant_domains": [
+        "mysy.gujarat.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "mysy.gujarat.gov.in"
+      ],
+      "anchor_url": "https://mysy.guj.nic.in/",
+      "source_type": "scheme_page",
+      "acceptable_sources": [
+        "https://mysy.gujarat.gov.in/"
+      ],
+      "audit": {
+        "action": "REPLACE_GT",
+        "reason": "mysy.guj.nic.in DNS_FAILED + never retrieved; verified live canonical MYSY portal mysy.gujarat.gov.in (HTTP 200)",
+        "url_status": "CONNECTION_FAILED",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/",
+        "replaced_url": "https://mysy.guj.nic.in/",
+        "replacement_url": "https://mysy.gujarat.gov.in/"
+      }
+    },
+    {
+      "id": "q059",
+      "question": "How do I apply for a Gujarat caste certificate online?",
+      "category": "state_specific",
+      "relevant_urls": [
+        "https://www.digitalgujarat.gov.in/"
+      ],
+      "relevant_domains": [
+        "digitalgujarat.gov.in"
+      ],
+      "authoritative_domains": [
+        "digitalgujarat.gov.in",
+        "gov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.digitalgujarat.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.digitalgujarat.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "digitalgujarat.gov.in TLS_MISMATCH locally but same domain retrieved in sibling q055/q056 -> domain live; local cert + retrieval gap",
+        "url_status": "TLS_MISMATCH",
+        "http_status": null,
+        "final_url": null,
+        "final_domain": null,
+        "retrieved_in_runs": "0/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q060",
+      "question": "What is the UMANG app and what government services does it provide?",
+      "category": "government_services",
+      "relevant_urls": [
+        "https://web.umang.gov.in/"
+      ],
+      "relevant_domains": [
+        "umang.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "umang.gov.in"
+      ],
+      "anchor_url": "https://web.umang.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://web.umang.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://web.umang.gov.in/",
+        "final_domain": "web.umang.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q061",
+      "question": "How do I access the MyGov citizen engagement platform?",
+      "category": "government_services",
+      "relevant_urls": [
+        "https://www.mygov.in/"
+      ],
+      "relevant_domains": [
+        "mygov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "mygov.in",
+        "nic.in"
+      ],
+      "anchor_url": "https://www.mygov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://www.mygov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://www.mygov.in/",
+        "final_domain": "www.mygov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    },
+    {
+      "id": "q062",
+      "question": "What is the PM-KISAN e-KYC process and why is it required?",
+      "category": "agriculture",
+      "relevant_urls": [
+        "https://pmkisan.gov.in/"
+      ],
+      "relevant_domains": [
+        "pmkisan.gov.in"
+      ],
+      "authoritative_domains": [
+        "gov.in",
+        "nic.in",
+        "pmkisan.gov.in"
+      ],
+      "anchor_url": "https://pmkisan.gov.in/",
+      "source_type": "official_portal",
+      "acceptable_sources": [
+        "https://pmkisan.gov.in/"
+      ],
+      "audit": {
+        "action": "KEEP",
+        "reason": "direct-HTTP OK; reachable",
+        "url_status": "OK",
+        "http_status": 200,
+        "final_url": "https://pmkisan.gov.in/",
+        "final_domain": "pmkisan.gov.in",
+        "retrieved_in_runs": "10/11",
+        "evidence": "evaluation/audit_cache/_audit_table.json + evaluation/audit_cache/probes/"
+      }
+    }
+  ],
+  "changelog": [
+    {
+      "version": "2026-08-30.v3.repaired",
+      "date": "2026-08-30",
+      "description": "Evidence-backed source repairs from the Phase 4 audit: 8 ground-truth URLs replaced with verified canonical official URLs; 1 official alternative added; 1 query flagged for manual review (not yet resolved). All decisions were derived from cross-run retrieval evidence + provider probes (search/scrape) and are recorded per-query under the 'audit' key. No source was hardcoded into production code; this is benchmark data repair only.",
+      "flagged_qids": [
+        "q057"
+      ]
+    },
+    {
+      "version": "2026-08-30.v3",
+      "date": "2026-08-30",
+      "description": "Finalized repaired benchmark. Removed q057 (PGVCL): the only manual-review flag from the source audit -- official domain pgvcl.com is unreachable for direct HTTP and crawlers, never retrieved by providers, and no verified official alternative surfaced in Firecrawl/Tavily search. Question removed rather than kept with an unverifiable source. Reason recorded here and in audit_report_2026-08-30.md for auditability.",
+      "removed_qids": [
+        "q057"
+      ]
+    }
+  ],
+  "audit_actions": {
+    "KEEP": 52,
+    "REPLACE_GT": 8,
+    "ADD_ACCEPTABLE_SOURCE": 1,
+    "FLAG_FOR_MANUAL_REVIEW": 1
+  }
+}

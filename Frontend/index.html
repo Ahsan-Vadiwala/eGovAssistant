@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>eGovAssist - Government Assisting AI</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;550;600;650;700&display=swap"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+
+</head>
+
+<body class="light-theme">
+
+<aside class="sidebar">
+
+    <div class="sidebar-header">
+
+        <span>
+            <i class="fa-solid fa-landmark"></i>
+            eGovAssist
+        </span>
+
+    </div>
+
+    <div
+        class="sidebar-content"
+        id="chatHistory"
+    >
+
+        <div class="chat-history-item active">
+
+            <i class="fa-regular fa-message"></i>
+
+            <span>
+                Current Session
+            </span>
+
+        </div>
+
+        <div class="chat-history-item">
+
+            <i class="fa-regular fa-message"></i>
+
+            <span>
+                PMFBY Information
+            </span>
+
+        </div>
+
+        <div class="chat-history-item">
+
+            <i class="fa-regular fa-message"></i>
+
+            <span>
+                Government Schemes
+            </span>
+
+        </div>
+
+        <div class="chat-history-item">
+
+            <i class="fa-regular fa-message"></i>
+
+            <span>
+                Financial Literacy
+            </span>
+
+        </div>
+
+    </div>
+
+</aside>
+
+<main class="main-container">
+
+    <header class="top-bar">
+
+        <div class="top-bar-title">
+
+            <strong>
+                eGovAssist
+            </strong>
+
+        </div>
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            title="Toggle Dark/Light Mode"
+            type="button"
+            aria-label="Toggle dark and light mode"
+        >
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </header>
+
+    <section
+        class="chat-window"
+        id="chatWindow"
+        aria-live="polite"
+        aria-label="eGovAssist conversation"
+    >
+
+        <div class="message ai">
+
+            Hello! I am your eGovAssist AI.
+            How can I help you with government
+            services today?
+
+        </div>
+
+    </section>
+
+    <footer class="input-area">
+
+        <div
+            class="search-status"
+            id="searchStatus"
+            role="status"
+            aria-live="polite"
+            aria-hidden="true"
+        >
+
+            <span class="search-status-spinner">
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+            </span>
+
+            <span
+                class="search-status-text"
+                id="searchStatusText"
+            >
+                Searching official sources...
+            </span>
+
+        </div>
+
+        <div class="input-wrapper">
+
+            <select
+                class="lang-selector"
+                id="langSelector"
+                aria-label="Response language"
+            >
+
+                <option value="en">
+                    English
+                </option>
+
+                <option value="hi">
+                    Hindi (हिंदी)
+                </option>
+
+                <option value="gu">
+                    Gujarati (ગુજરાતી)
+                </option>
+
+                <option value="mr">
+                    Marathi (मराठी)
+                </option>
+
+            </select>
+
+            <input
+                type="text"
+                class="chat-input"
+                id="chatInput"
+                placeholder="Ask about government services..."
+                autocomplete="off"
+                aria-label="Ask eGovAssist a question"
+            >
+
+            <button
+                class="action-btn"
+                id="actionBtn"
+                title="Voice Input"
+                type="button"
+                aria-label="Voice input"
+            >
+
+                <i class="fa-solid fa-microphone"></i>
+
+            </button>
+
+        </div>
+
+    </footer>
+
+</main>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"
+></script>
+
+<script
+    src="./js/app.js"
+></script>
+
+</body>
+
+</html>
