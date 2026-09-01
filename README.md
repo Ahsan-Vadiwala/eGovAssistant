@@ -41,6 +41,27 @@ Frontend
 
 `web_discovery/service.py` is the main live-web retrieval path. It coordinates Tavily/Firecrawl, BM25 ranking, retrieval scoring, authority tiers and scheme-candidate handling. `retrieval_scorer.py` contains the shared source-authority/relevance scoring. `scheme_candidate.py` contains the A2.1 authority-aware promotion gate, including title-aware tier comparison.
 
+
+## .env : example
+`.env` file contains all your API keys for web-search, pre- & re-ranking gemini key, answer generation Groq api key.
+
+-> For maximum usage & credits, Tavily & Groq has backup API keys to never run-out of your daily API tokens limit.
+
+```
+GROQ_API_KEY_1=your_main_api_key
+GROQ_API_KEY_2=your_2nd_groq_api_key
+GROQ_API_KEY=your_backup_groq_api_key
+
+GEMINI_API_KEY=your_gemini_api_key
+
+TAVILY_API_KEY_1=your_main_tavily_api_key
+TAVILY_API_KEY_2=your_backup_tavily_api_key
+
+FIRECRAWL_API_KEY=your_firecrawl_api_key
+
+SEARCH_PROVIDERS=tavily,firecrawl
+```
+
 ## Current benchmark baseline
 
 The retained frozen benchmark is the 61-query evaluation used during the retrieval experiments. The verified A2.1 replay baseline is:
