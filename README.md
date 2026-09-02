@@ -88,7 +88,9 @@ Temporary experiments, obsolete retrieval variants, Python caches, uploaded-docu
 
 ## Run
 
-From `backend/`, install `requirements.txt` and start the FastAPI application with:
+From `backend/`, install `requirements.txt` & enter `.venv` mode by running `.venv\scripts\activate.ps1` from `backend/`
+
+then start the FastAPI application with:
 
 ```bash
 python -m uvicorn app.main:app --reload
